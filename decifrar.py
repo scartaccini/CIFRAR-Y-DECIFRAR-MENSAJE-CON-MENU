@@ -18,7 +18,7 @@ def decifra():
 	for c,v in numeroSecreto.items():
 		#print(decifrado[numeroSecreto[c]])
 		#print("↓" * hasta)
-		#se mejora la forma de mostrar el mensaje decifrado
+		#se mejora la forma de mostrar el mensaje descifrado
 		linea = decifrado[numeroSecreto[c]]
 		if (c == 1):
 			print("↓   ".join(linea) + "↓" )
