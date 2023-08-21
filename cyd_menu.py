@@ -1,7 +1,7 @@
 from palabra_secreta import ingresoSecreto
 from palabra_secreta_ordenada import creaDiccionario
 from mensaje_sin_cifrar import ingresoMensaje
-from decifrar import decifra
+from descifrar import descifra
 
 def codificar(x):
 	
@@ -35,7 +35,7 @@ def mensajeSegmentar():
 #imprime el mensaje cifrado, ejm: LTMAHUCSAAOSQLE@OEOT
 
 while True:
-	opcion=input("Seleccione una opción :  \n\t Cifrar mensaje -> C \n\t decifrar mensaje -> D \n\t Salir -> S \n \t ")
+	opcion=input("Seleccione una opción :  \n\t Cifrar mensaje -> C \n\t Descifrar mensaje -> D \n\t Salir -> S \n \t ")
 	if (opcion=="c" or opcion=="C"):
 		clave=ingresoSecreto()
 		numeroSecreto=creaDiccionario(clave)
@@ -44,7 +44,7 @@ while True:
 		mensajeLista=[]
 		mensajeSegmentar()
 	elif (opcion=="d" or opcion=="D"):
-		decifra()
+		descifra()
 			
 	elif (opcion=="s" or opcion=="S"):
 		break
