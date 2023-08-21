@@ -35,7 +35,7 @@ def mensajeSegmentar():
 #imprime el mensaje cifrado, ejm: LTMAHUCSAAOSQLE@OEOT
 
 while True:
-	opcion=input("Seleccione una opción :  \n\t Cifrar mensaje -> C \n\t Descifrar mensaje -> D \n\t Salir -> S \n \t ")
+	opcion=input("Seleccione una opción:  \n\t Cifrar mensaje -> C \n\t Descifrar mensaje -> D \n\t Salir -> S \n \t ")
 	if (opcion=="c" or opcion=="C"):
 		clave=ingresoSecreto()
 		numeroSecreto=creaDiccionario(clave)
